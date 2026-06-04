@@ -123,6 +123,9 @@
             right: 20px;
             box-shadow: 0 4px 10px rgba(77, 166, 255, 0.3);
             z-index: 10;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
         .bottom_bar {
@@ -145,15 +148,34 @@
         .bottom_element_grid {
             margin-top: 0 !important;
             justify-content: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .active_icon_bg {
+            background-color: #0b2545; /* Dark blue pill */
+            padding: 4px 20px;
+            border-radius: 16px;
+            margin-bottom: 4px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
         .bottom_element_image {
             margin-bottom: 4px !important;
         }
+        
+        .active_icon_bg .bottom_element_image {
+            margin-bottom: 0 !important;
+        }
 
         .bottom_element_text {
             color: #888888 !important;
             margin-top: 0 !important;
+            font-size: 11px;
+            font-weight: 500;
         }
 
         .bottom_element_text.open {
@@ -166,7 +188,7 @@
 <div class="container">
     <div class="top_grid">
         <!-- Main Logo -->
-        <img class="main_logo" src="assets/images/zgc6646.png" alt="Logo">
+        <img class="main_logo" src="assets/images/otM5jOA.png" alt="Logo">
         
         <!-- Right Icons -->
         <div class="right">
@@ -193,13 +215,16 @@
 </div>
 
 <button class="dodaj_dokument_btn">
-    + Dodaj dokument
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 6px;"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+    Dodaj dokument
 </button>
 
 <div class="bottom_bar">
     <div class="bottom_bar_grid">
         <div class="bottom_element_grid" send="index.html">
-            <div class="bottom_element_image home_open"></div>
+            <div class="active_icon_bg">
+                <div class="bottom_element_image home_open"></div>
+            </div>
             <p class="bottom_element_text open">Dokumenty</p>
         </div>
         <div class="bottom_element_grid" send="services.html">
