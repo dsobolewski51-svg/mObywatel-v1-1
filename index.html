@@ -21,6 +21,9 @@
             margin: 0;
             padding: 0;
             font-family: "Poppins", sans-serif;
+            overflow: hidden;
+            height: 100vh;
+            width: 100vw;
         }
 
         .container {
@@ -129,6 +132,11 @@
         }
 
         .bottom_bar {
+            position: fixed !important;
+            bottom: 0 !important;
+            left: 0 !important;
+            width: 100% !important;
+            box-sizing: border-box !important;
             background-color: #121212 !important;
             border-top: none !important;
             height: auto !important;
@@ -136,6 +144,7 @@
             padding-bottom: calc(2px + env(safe-area-inset-bottom)) !important;
             display: flex;
             align-items: center;
+            z-index: 5;
         }
 
         .bottom_bar_grid {
