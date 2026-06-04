@@ -128,18 +128,31 @@
         .bottom_bar {
             background-color: #121212 !important;
             border-top: 1px solid #2a2a2a !important;
-            height: auto !important;
-            padding-top: 10px;
-            padding-bottom: max(10px, env(safe-area-inset-bottom)) !important;
+            height: 55px !important;
+            padding-bottom: env(safe-area-inset-bottom) !important;
+            display: flex;
+            align-items: center;
         }
 
         .bottom_bar_grid {
             grid-template-columns: repeat(4, 25%) !important;
-            margin-top: 0;
+            margin-top: 0 !important;
+            height: 100% !important;
+            align-items: center;
+        }
+        
+        .bottom_element_grid {
+            margin-top: 0 !important;
+            justify-content: center;
+        }
+
+        .bottom_element_image {
+            margin-bottom: 2px !important;
         }
 
         .bottom_element_text {
             color: #888888 !important;
+            margin-top: 0 !important;
         }
 
         .bottom_element_text.open {
