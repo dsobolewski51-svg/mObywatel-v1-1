@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>mObywatel</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/home.css">
+    <style>
+        /* Dark mode modifications */
+        body {
+            background-color: #121212 !important;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+            font-family: "Poppins", sans-serif;
+        }
+
+        .card {
+            background: linear-gradient(135deg, #0052cc 0%, #0073e6 100%) !important;
+            border-radius: 16px;
+            height: 220px;
+            width: 100%;
+            border: none;
+            box-shadow: none;
+        }
+
+        /* Top grid adjustments */
+        .top_grid {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .right {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            margin-right: 0;
+            margin-left: auto;
+        }
+
+        .bottom_bar {
+            background-color: #121212 !important;
+            border-top: 1px solid #2a2a2a !important;
+        }
+
+        .bottom_bar_grid {
+            grid-template-columns: repeat(4, 25%) !important;
+        }
+
+        .bottom_element_text {
+            color: #888888 !important;
+        }
+
+        .bottom_element_text.open {
+            color: #4da6ff !important;
+        }
+        
+        .page_title {
+            font-size: 28px;
+            font-weight: 600;
+            margin-top: 15px;
+            margin-bottom: 20px;
+        }
+
+        .dostosuj_widok {
+            color: #4da6ff;
+            font-size: 14px;
+            font-weight: 500;
+            text-decoration: none;
+            display: block;
+            margin-top: 15px;
+        }
+
+        .dodaj_dokument_btn {
+            background-color: #4da6ff;
+            color: #121212;
+            border: none;
+            border-radius: 24px;
+            padding: 12px 20px;
+            font-size: 15px;
+            font-weight: 600;
+            font-family: inherit;
+            position: fixed;
+            bottom: 110px;
+            right: 20px;
+            box-shadow: 0 4px 10px rgba(77, 166, 255, 0.3);
+            z-index: 10;
+        }
+
+        /* Inverting specific images to white for dark mode */
+        .top_image.invert {
+            filter: brightness(0) invert(1);
+        }
+        
+        .main_logo {
+            border-radius: 8px;
+            width: 35px;
+        }
+        
+        .card_title {
+            color: white;
+            font-size: 20px;
+            font-weight: 600;
+            padding: 20px;
+            display: block;
+        }
+        
+        .card_emblem {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 32px;
+            height: 32px;
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .card_emblem img {
+            width: 20px;
+            filter: brightness(0) invert(1);
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="top_grid">
+        <!-- Main Logo (using original image) -->
+        <img class="main_logo" src="assets/images/1GUMnTn.png" alt="Logo">
+        
+        <!-- Right Icons (bell, message - guessing based on size) -->
+        <div class="right">
+            <img class="top_image invert" src="assets/images/3oibZUL.png" alt="Message" onerror="this.style.display='none'">
+            <img class="top_image invert" src="assets/images/v1iHjwX.png" alt="Bell" onerror="this.style.display='none'">
+        </div>
+    </div>
+
+    <h1 class="page_title">Dokumenty</h1>
+
+    <div class="card">
+        <span class="card_title">mDowód</span>
+        <div class="card_emblem">
+            <img src="assets/images/1GUMnTn.png" alt="Emblem">
+        </div>
+        <!-- Card background eagle can be added here if needed, or keeping it clean as per screenshot base -->
+    </div>
+
+    <a href="#" class="dostosuj_widok">Dostosuj widok</a>
+</div>
+
+<button class="dodaj_dokument_btn">
+    + Dodaj dokument
+</button>
+
+<div class="bottom_bar">
+    <div class="bottom_bar_grid">
+        <div class="bottom_element_grid" send="index.html">
+            <div class="bottom_element_image home_open"></div>
+            <p class="bottom_element_text open">Dokumenty</p>
+        </div>
+        <div class="bottom_element_grid" send="services.html">
+            <div class="bottom_element_image services"></div>
+            <p class="bottom_element_text">Usługi</p>
+        </div>
+        <div class="bottom_element_grid" send="qr.html">
+            <div class="bottom_element_image qr"></div>
+            <p class="bottom_element_text">Kod QR</p>
+        </div>
+        <div class="bottom_element_grid" send="more.html">
+            <div class="bottom_element_image more"></div>
+            <p class="bottom_element_text">Więcej</p>
+        </div>
+    </div>
+</div>
+
+<script src="assets/js/bar.js"></script>
+</body>
+</html>
