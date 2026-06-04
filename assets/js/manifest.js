@@ -6,12 +6,12 @@ let webManifest = {
     "display": "standalone",
     "icons": [
         {
-            "src": "assets/images/1GUMnTn.png",
+            "src": "assets/images/otM5jOA.png",
             "sizes": "192x192",
             "type": "image/png"
         },
         {
-            "src": "assets/images/1GUMnTn.png",
+            "src": "assets/images/otM5jOA.png",
             "sizes": "512x512",
             "type": "image/png"
         }
