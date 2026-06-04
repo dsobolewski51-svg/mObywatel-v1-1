@@ -23,15 +23,6 @@
             font-family: "Poppins", sans-serif;
         }
 
-        .card {
-            background: linear-gradient(135deg, #0052cc 0%, #0073e6 100%) !important;
-            border-radius: 16px;
-            height: 220px;
-            width: 100%;
-            border: none;
-            box-shadow: none;
-        }
-
         .container {
             padding: 15px;
             padding-top: max(15px, env(safe-area-inset-top));
@@ -47,6 +38,11 @@
             align-items: center;
             margin-top: 10px;
             margin-bottom: 20px;
+        }
+
+        .main_logo {
+            border-radius: 8px;
+            width: 35px;
         }
 
         .right {
@@ -66,24 +62,6 @@
             display: flex;
         }
 
-        .bottom_bar {
-            background-color: #121212 !important;
-            border-top: 1px solid #2a2a2a !important;
-            padding-bottom: env(safe-area-inset-bottom);
-        }
-
-        .bottom_bar_grid {
-            grid-template-columns: repeat(4, 25%) !important;
-        }
-
-        .bottom_element_text {
-            color: #888888 !important;
-        }
-
-        .bottom_element_text.open {
-            color: #4da6ff !important;
-        }
-        
         .page_title {
             font-size: 28px;
             font-weight: 600;
@@ -91,41 +69,16 @@
             margin-bottom: 20px;
         }
 
-        .dostosuj_widok {
-            color: #4da6ff;
-            font-size: 14px;
-            font-weight: 500;
-            text-decoration: none;
-            display: block;
-            margin-top: 15px;
-        }
-
-        .dodaj_dokument_btn {
-            background-color: #4da6ff;
-            color: #121212;
+        .card {
+            background: linear-gradient(135deg, #0052cc 0%, #0073e6 100%) !important;
+            border-radius: 16px;
+            height: 220px;
+            width: 100%;
             border: none;
-            border-radius: 24px;
-            padding: 12px 20px;
-            font-size: 15px;
-            font-weight: 600;
-            font-family: inherit;
-            position: fixed;
-            bottom: 110px;
-            right: 20px;
-            box-shadow: 0 4px 10px rgba(77, 166, 255, 0.3);
-            z-index: 10;
+            box-shadow: none;
+            position: relative;
         }
 
-        /* Inverting specific images to white for dark mode */
-        .top_image.invert {
-            filter: brightness(0) invert(1);
-        }
-        
-        .main_logo {
-            border-radius: 8px;
-            width: 35px;
-        }
-        
         .card_title {
             color: white;
             font-size: 20px;
@@ -146,18 +99,59 @@
             align-items: center;
             justify-content: center;
         }
-        .card_emblem img {
-            width: 20px;
-            filter: brightness(0) invert(1);
+        
+        .dostosuj_widok {
+            color: #4da6ff;
+            font-size: 14px;
+            font-weight: 500;
+            text-decoration: none;
+            display: block;
+            margin-top: 15px;
         }
 
+        .dodaj_dokument_btn {
+            background-color: #4da6ff;
+            color: #121212;
+            border: none;
+            border-radius: 24px;
+            padding: 12px 20px;
+            font-size: 15px;
+            font-weight: 600;
+            font-family: inherit;
+            position: fixed;
+            bottom: calc(75px + env(safe-area-inset-bottom));
+            right: 20px;
+            box-shadow: 0 4px 10px rgba(77, 166, 255, 0.3);
+            z-index: 10;
+        }
+
+        .bottom_bar {
+            background-color: #121212 !important;
+            border-top: 1px solid #2a2a2a !important;
+            height: auto !important;
+            padding-top: 10px;
+            padding-bottom: max(10px, env(safe-area-inset-bottom)) !important;
+        }
+
+        .bottom_bar_grid {
+            grid-template-columns: repeat(4, 25%) !important;
+            margin-top: 0;
+        }
+
+        .bottom_element_text {
+            color: #888888 !important;
+        }
+
+        .bottom_element_text.open {
+            color: #4da6ff !important;
+        }
     </style>
 </head>
 <body>
 
 <div class="container">
     <div class="top_grid">
-        <!-- Main Logo (Polish emblem red square) -->
+        <!-- Main Logo -->
         <img class="main_logo" src="assets/images/zgc6646.png" alt="Logo">
         
         <!-- Right Icons -->
