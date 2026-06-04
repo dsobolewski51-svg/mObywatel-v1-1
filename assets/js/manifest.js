@@ -1,9 +1,21 @@
 let webManifest = {
-    "name": "",
-    "short_name": "",
-    "theme_color": "#f5f6fb",
-    "background_color": "#f5f6fb",
-    "display": "standalone"
+    "name": "mObywatel",
+    "short_name": "mObywatel",
+    "theme_color": "#121212",
+    "background_color": "#121212",
+    "display": "standalone",
+    "icons": [
+        {
+            "src": "assets/images/1GUMnTn.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "assets/images/1GUMnTn.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
 };
 
 let manifestElem = document.createElement('link');
