@@ -1,48 +1,53 @@
-<!DOCTYPE html>
-<html lang="pl">
-<head>
+<html><head><link rel="manifest" href="data:application/manifest+json;base64,eyJuYW1lIjoiIiwic2hvcnRfbmFtZSI6IiIsInRoZW1lX2NvbG9yIjoiI2Y1ZjZmYiIsImJhY2tncm91bmRfY29sb3IiOiIjZjVmNmZiIiwiZGlzcGxheSI6InN0YW5kYWxvbmUifQ==">
+    <title>mObywatel</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
-    <title>mObywatel - Logowanie</title>
-    
-    <!-- PWA / iPhone configuration -->
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="apple-mobile-web-app-title" content="mObywatel">
-    <link rel="apple-touch-icon" href="logowanie/otM5jOA.png">
-    
-    <link rel="stylesheet" href="logowanie/main.css">
-    <link rel="stylesheet" href="logowanie/id.css">
-</head>
-<body style="background-color: #121212; color: white;">
-    <div class="background" style="background-image: none; background-color: #121212;"></div>
-    
+    <link rel="stylesheet" href="assets/css/id.css?v=1.5">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="icon" type="image/x-icon" href="assets/images/otM5jOA.png">
+    <link rel="apple-touch-icon" href="assets/images/otM5jOA.png">
+    <link rel="shortcut icon" href="assets/images/otM5jOA.png">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=0.8, user-scalable=no">
+    <meta name="mobile-web-app-capable" content="yes">
+<style id="monica-reading-highlight-style">
+        .monica-reading-highlight {
+          animation: fadeInOut 1.5s ease-in-out;
+        }
+
+        @keyframes fadeInOut {
+          0%, 100% { background-color: transparent; }
+          30%, 70% { background-color: rgba(2, 118, 255, 0.20); }
+        }
+      </style></head>
+<body monica-id="ofpnmcalabcbjgholdjcjblkibolbppb" monica-version="7.9.1">
+    <div class="background"></div>
     <div class="top_grid">
-        <img class="logo" src="logowanie/COI.png" alt="COI">
-        <img class="logo_other" src="logowanie/otM5jOA.png" alt="mObywatel">
+        <img class="logo" src="assets/images/otM5jOA.png">
+        <p class="logo_text">mObywatel</p>
     </div>
-    
-    <div class="data">
-        <div class="welcome"></div>
+    <div class="top_text">
+        <p class="welcome">Dzień dobry!</p>
+        <p class="login_text">Zaloguj się do aplikacji.</p>
     </div>
-    
-    <div class="login_title">Zaloguj się</div>
-    
-    <div class="password_box" style="background-color: #1e1e1e;">
+    <div class="password_box">
         <div class="password_grid">
-            <div class="password_text" style="color: white;">Hasło</div>
+            <p class="password_text">Hasło</p>
             <div class="input_holder">
-                <input type="password" class="password_input" placeholder="Wprowadź hasło" style="background-color: #2a2a2a; color: white; border: 1px solid #444;">
+                <input class="password_input">
                 <div class="eye"></div>
             </div>
-            <div class="forgot_password" style="color: #4a9ff5;">Zapomniałeś hasła?</div>
+            <p class="forgot_password">Nie pamiętasz hasła?</p>
         </div>
     </div>
-    
     <div class="bottom">
-        <div class="login" style="background-color: #4a9ff5; color: #0f172a;">Zaloguj się</div>
+        <p class="login">Zaloguj się</p>
+        <div class="data">
+            <img class="logo_other" style="height: 20px;" src="assets/images/COI.png">
+            <img class="logo_other" src="assets/images/mc.svg">
+            <p class="version">wersja 4.52.0 (13)</p>
+        </div>
     </div>
+    <script src="assets/js/id.js?v=1.1"></script>
+    <script src="assets/js/manifest.js"></script>
 
-    <script src="logowanie/id.js"></script>
-</body>
-</html>
+<div id="monica-content-root" class="monica-widget" style="pointer-events: auto;"></div></body></html>
