@@ -98,9 +98,9 @@ if (sex === "m"){
 
 
 
-setData("name", data['name'].toUpperCase());
-setData("surname", data['surname'].toUpperCase());
-setData("nationality", data['nationality'].toUpperCase());
+setData("name", data['Piotr'].toUpperCase());
+setData("surname", data['Sobolewski'].toUpperCase());
+setData("nationality", data['Polskie'].toUpperCase());
 setData("birthday", birthday);
 setData("familyName", data['familyName']);
 setData("sex", sex);
