@@ -111,7 +111,7 @@
             <p onclick="sendTo('home')" class="back_text">Wróć</p>
         </div>
         <p class="title_text">mDowód</p>
-        <img src="images/pomoctechniczna2.png" class="help_img" style="width: 20px;">
+        <img src="mdowod/IMG_20260212_215503.jpg" class="help_img" style="width: 20px;">
     </div>
 
     <div class="bottom_bar">
@@ -150,23 +150,23 @@
         <p class="eagle_text">Rzeczpospolita<br>Polska</p>
         <div class="id_data_grid">
             <div class="data_holder">
-                <p class="data_title firstname" id="name"></p>
+                <p class="data_title firstname" id="Piotr"></p>
                 <p class="data_value">Imię (imiona)</p>
             </div>
             <div class="data_holder">
-                <p class="data_title surname" id="surname"></p>
+                <p class="data_title surname" id="Korzeniewski"></p>
                 <p class="data_value">Nazwisko</p>
             </div>
             <div class="data_holder">
-                <p class="data_title" id="nationality"></p>
+                <p class="data_title" id="Polskie"></p>
                 <p class="data_value">Obywatelstwo</p>
             </div>
             <div class="data_holder">
-                <p class="data_title" id="birthday"></p>
+                <p class="data_title" id="14.06.2007"></p>
                 <p class="data_value">Data urodzenia</p>
             </div>
             <div class="data_holder">
-                <p class="data_title" id="pesel"></p>
+                <p class="data_title" id="07261402957"></p>
                 <p class="data_value">Numer PESEL</p>
             </div>
         </div>
@@ -204,26 +204,26 @@
                 <!-- Seria i numer -->
                 <div class="confirm_box" style="border: none;">
                     <p class="box_top">Seria i numer</p>
-                    <b><p class="box_value" id="seria_numer" style="font-size: 25px;"></p></b>
+                    <b><p class="box_value" id="ZBCA 82621" style="font-size: 25px;"></p></b>
                     <button class="main_button">Kopiuj</button>
                 </div>
                 <!-- Organ wydający -->
                 <div class="confirm_box">
                     <p class="box_top">Termin ważności</p>
-                    <b><p class="box_value" id="waznosc" style="font-size: 22px;"></p></b>
+                    <b><p class="box_value" id="14.06.2035" style="font-size: 22px;"></p></b>
                 </div>
                 <!-- Termin ważności -->
                 <div class="confirm_box">
                     <p class="box_top">Data wydania</p>
-                    <b><p class="box_value" id="wydany" style="font-size: 22px;"></p></b>
+                    <b><p class="box_value" id="14.06.2035" style="font-size: 22px;"></p></b>
                 </div>
                 <div class="confirm_box">
                     <p class="box_top">Imię ojca</p>
-                    <b><p class="box_value" id="fatherName" style="font-size: 22px;"></p></b>
+                    <b><p class="box_value" id="Dominik" style="font-size: 22px;"></p></b>
                 </div>
                 <div class="confirm_box">
                     <p class="box_top">Imię matki</p>
-                    <b><p class="box_value" id="motherName" style="font-size: 22px;"></p></b>
+                    <b><p class="box_value" id="Agata" style="font-size: 22px;"></p></b>
                 </div>
         </div>
         
@@ -237,35 +237,35 @@
             <div class="additional_holder">
                 <div class="additional_grid">
                     <p class="additional_title">Nazwisko rodowe</p>
-                    <p class="additional_subtitle" id="familyName"></p>
+                    <p class="additional_subtitle" id="Korzeniewski"></p>
                 </div>
                 <div class="additional_grid">
                     <p class="additional_title">Płeć</p>
-                    <p class="additional_subtitle" id="sex"></p>
+                    <p class="additional_subtitle" id="Mężczyzna"></p>
                 </div>
                 <div class="additional_grid">
                     <p class="additional_title">Nazwisko rodowe ojca</p>
-                    <p class="additional_subtitle" id="fathersFamilyName"></p>
+                    <p class="additional_subtitle" id="Korzeniewski"></p>
                 </div>
                 <div class="additional_grid">
                     <p class="additional_title">Nazwisko rodowe matki</p>
-                    <p class="additional_subtitle" id="mothersFamilyName"></p>
+                    <p class="additional_subtitle" id="Sobolewska"></p>
                 </div>
                 <div class="additional_grid">
-                    <p class="additional_title">Miejsce urodzenia</p>
-                    <p class="additional_subtitle" id="birthPlace"></p>
+                    <p class="additional_title">Miejsce Urodzenia</p>
+                    <p class="additional_subtitle" id="Oława"></p>
                 </div>
                 <div class="additional_grid">
                     <p class="additional_title">Kraj urodzenia</p>
-                    <p class="additional_subtitle" id="countryOfBirth"></p>
+                    <p class="additional_subtitle" id="Polska"></p>
                 </div>
                 <div class="additional_grid">
                     <p class="additional_title">Adres zameldowania na pobyt stały</p>
-                    <p class="additional_subtitle" id="adress"></p>
+                    <p class="additional_subtitle" id="ul. Przyjaźni 8D/25"></p>
                 </div>
                 <div class="additional_grid" style="border-bottom: none;">
                     <p class="additional_title">Data zameldowania na pobyt stały</p>
-                    <p class="additional_subtitle home_date"></p>
+                    <p class="additional_subtitle home_date" id="07.10.2018"></p>
                 </div>
             </div>
         </div>
